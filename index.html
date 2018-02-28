@@ -6,9 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/knacss.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 </head>
 <body>
-    <div id="openweathermap-widget-15"></div>
-    <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 15,cityid: '2988670',appid: '58ce3ab8d36bf722c61f295b05a59805',units: 'metric',containerid: 'openweathermap-widget-15',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script> 
+    <section class="autogrid">
+        <div class="center" id="recherche_ville">
+            <input id="champ">
+        </div>
+    </section>
+    <section class="autogrid" id="validation">
+        <div class="center">
+            <button id="bouton">Valider</button>
+        </div>
+    </section>
+    <section class="autogrid">
+        <div class="center" id="date">
+        </div>
+    </section>
+    <section class="grid-2 has-gutter">
+        <div class="row-6" id="degrés"></div>
+        <div class="info_supp" id="temp_max"></div>
+        <div class="info_supp" id="temp_min"></div>
+        <div class="info_supp" id="pres_atm"></div>
+        <div class="info_supp" id="vit_ven"></div>
+        <div class="info_supp" id="humid"></div>
+    </section>
+    <section class="autogrid">
+        <div class='center' id="long"></div>
+        <div class='center' id="lati"></div>
+    </section>
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed/v1/view?key= AIzaSyCItPCij3-ddiqcfwVKxzE-c0UoXf0CVjU &center=43.11,1.61&zoom=11&maptype=satellite"></iframe>
+    </div>
+    <!-- scripts -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/moment-with-locales.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

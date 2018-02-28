@@ -1,0 +1,69 @@
+body
+{
+    background: #00796B;
+    color: white;
+    margin: 0 auto;
+    font-family:'Montserrat', sans-serif;
+}
+
+#recherche_ville
+{
+    margin-top: 5vh;
+}
+
+#champ
+{
+    background: #00796B;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+#validation
+ {
+     margin-top: 5vh;
+ }
+
+ button
+ {
+    border-radius: 40px;
+    color: #00796B;
+ }
+
+ #date
+ {
+     margin-top: 5vh;
+ }
+
+ #degrés
+ {
+     font-size: 10em;
+     text-align: center;
+ }
+
+ .info_supp
+ {
+     text-align: center;
+ }
+
+ #temp_max
+ {
+     margin-top: 20%;
+ }
+
+ #pos_geo
+{
+    margin-left: 5vw;
+}
+
+#map
+{
+    margin-left: 5vw;
+    width: 400px;
+    height: 400px;
+}
+
+img
+{
+    width: 80vw;
+}
