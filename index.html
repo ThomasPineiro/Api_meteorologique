@@ -9,34 +9,39 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 </head>
 <body>
+    <!-- Mon framework fonctionne avec un système de section dans lesquelles on va placer nos div avec des classes qui détermineront leur positionnement-->
+    <!-- Autogrid indique a notre page que toute les divs placés dans la section vont se répartir sur la même ligne en se répartissant la place, c'est la valeur a utiliser lorsque l'on souhaite placer une seule div dans la section pour une bonne responsivité -->
     <section class="autogrid">
-        <div class="center" id="recherche_ville">
-            <input id="champ">
+        <!-- Item-center centre la div sur la section -->
+        <div class="item-center responsive" id="recherche_ville">
+            <input id="champ" value="Tombouctou">
         </div>
     </section>
     <section class="autogrid" id="validation">
-        <div class="center">
+        <div class="item-center responsive">
             <button id="bouton">Valider</button>
         </div>
     </section>
     <section class="autogrid">
-        <div class="center" id="date">
+        <div class="item-center responsive" id="date">
         </div>
     </section>
+    <!-- Les grids suivies d'une valeur indiquent a notre section combien de colonnes seronts comprises dans la grille (tableau), ici grid-2 indique donc qu'il y aura 2 colonnes -->
     <section class="grid-2 has-gutter">
-        <div id="degrés"></div>
-        <div class="info_supp">
-            <p id="temp_max"></p>
-            <p id="temp_min"></p>
-            <p id="pres_atm"></p>
-            <p id="vit_ven"></p>
-            <p id="humid"></p>
+        <div id="degrés" class="item-center responsive"></div>
+        <div class="item-center">
+            <p id="temp_max" class="responsive"></p>
+            <p id="temp_min" class="responsive"></p>
+            <p id="pres_atm" class="responsive"></p>
+            <p id="vit_ven" class="responsive"></p>
+            <p id="humid" class="responsive"></p>
         </div>
     </section>
     <section class="autogrid">
-        <div class='center' id="coordonnees"></div>
+        <div class="item-center responsive" id="long"></div>
+        <div class="item-center responsive" id="lati"></div>
     </section>
-    <div id="map">
+    <div id="map" class="responsive">
     </div>
     <!-- scripts -->
     <script src="js/jquery-3.2.1.js"></script>

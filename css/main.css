@@ -17,6 +17,7 @@ body
     border: none;
     border-bottom: 2px solid white;
     color: white;
+    text-align: center;
 }
 
 #validation
@@ -37,18 +38,13 @@ body
 
  #degrés
  {
-     font-size: 10em;
-     text-align: center;
- }
-
- .info_supp
- {
+     font-size: 20vh;
      text-align: center;
  }
 
  #temp_max
  {
-     margin-top: 20%;
+     margin-top: 7%;
  }
 
  #pos_geo
@@ -58,12 +54,45 @@ body
 
 #map
 {
-    margin-left: 5vw;
-    width: 400px;
-    height: 400px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
 }
 
 img
 {
     width: 80vw;
+}
+
+@media (max-width : 768px)
+{
+
+.responsive
+{
+    display: flex;
+    justify-content: center;
+}
+
+#map
+{
+    height: 55vh;
+}
+
+}
+
+@media (max-width : 425px)
+{
+.responsive
+{
+    display: flex;
+    justify-content: center;
+}
+
+#map 
+{
+    width: 100vw;
+    height: 55vh;
+}
+
 }

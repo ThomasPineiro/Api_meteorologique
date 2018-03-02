@@ -1,6 +1,8 @@
+//Utilisation de moment.js pour afficher la date
 moment.locale('fr');
 $('#date').text(moment().format('LL'));
 
+//Utilisation de l'api
 var ville = $("#champ").val();
 function meteo(ville){
     $.ajax({
@@ -21,6 +23,7 @@ function meteo(ville){
 })
 }
 
+//Le document.ready lance la fonction au chargement de la page, la value de mon input est prise en compte et la requete est effectuée avec la valeur indiquée (ici Tombouctou)
 $(document).ready(function(){
     meteo(ville);
     $("#bouton").click(function(){
